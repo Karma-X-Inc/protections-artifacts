@@ -57,7 +57,7 @@ rule Windows_Trojan_Havoc_9c7bb863 {
 
 rule Windows_Trojan_Havoc_9c8bb863 {
     meta:
-        author = "Elastic Security"
+        author = "Karma-X Inc"
         id = "9c7bb863-b6c2-4d5f-ae50-aad900f1d4eb"
         creation_date = "2024-02-15"
         last_modified = "2023-02-15"
@@ -96,7 +96,7 @@ rule Windows_Trojan_Havoc_88053562 {
 
 rule Windows_Trojan_Havoc_88153562 {
     meta:
-        author = "Elastic Security"
+        author = "Karma-X Inc"
         id = "88053562-ae19-44fe-8aaf-aab9687d6b80"
         creation_date = "2024-02-15"
         last_modified = "2024-02-15"
