@@ -55,6 +55,25 @@ rule Windows_Trojan_Havoc_9c7bb863 {
         all of them
 }
 
+rule Windows_Trojan_Havoc_9c8bb863 {
+    meta:
+        author = "Elastic Security"
+        id = "9c7bb863-b6c2-4d5f-ae50-aad900f1d4eb"
+        creation_date = "2024-02-15"
+        last_modified = "2023-02-15"
+        threat_name = "Windows.Trojan.Havoc"
+        severity = 100
+        arch_context = "x86"
+        scan_context = "file, memory"
+        license = "Elastic License v2"
+        os = "windows"
+    strings:
+        $a1 = { 56 90 48 89 E6 48 83 E4 F0 48 83 EC 20 E8 0F 00 00 00 48 89 F4 5E C3 }
+        $a2 = { 65 48 8B 04 25 60 00 00 00 }
+    condition:
+        all of them
+}
+
 rule Windows_Trojan_Havoc_88053562 {
     meta:
         author = "Elastic Security"
@@ -71,6 +90,24 @@ rule Windows_Trojan_Havoc_88053562 {
         os = "windows"
     strings:
         $a = { 48 81 EC F8 04 00 00 48 8D 7C 24 78 44 89 8C 24 58 05 00 00 48 8B AC 24 60 05 00 00 4C 8D 6C 24 78 F3 AB B9 59 00 00 00 48 C7 44 24 70 00 00 00 00 C7 44 24 78 68 00 00 00 C7 84 24 B4 00 00 00 }
+    condition:
+        all of them
+}
+
+rule Windows_Trojan_Havoc_88153562 {
+    meta:
+        author = "Elastic Security"
+        id = "88053562-ae19-44fe-8aaf-aab9687d6b80"
+        creation_date = "2024-02-15"
+        last_modified = "2024-02-15"
+        threat_name = "Windows.Trojan.Havoc"
+        severity = 100
+        arch_context = "x86"
+        scan_context = "file, memory"
+        license = "Elastic License v2"
+        os = "windows"
+    strings:
+        $a = { 48 81 EC F8 05 00 00 48 8D 7C 24 78 44 89 8C 24 58 05 00 00 48 8B AC 24 60 05 00 00 4C 8D 6C 24 78 F3 AB B9 59 00 00 00 48 C7 44 24 70 00 00 00 00 C7 44 24 78 68 00 00 00 C7 84 24 B4 00 00 00 }
     condition:
         all of them
 }
