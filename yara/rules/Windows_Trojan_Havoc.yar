@@ -1,3 +1,8 @@
+/*
+    Couple Karma-X changed Yara rules - See how we block these threats without YARA and instead with Vitamin-K here: https://www.karma-x.io/blog/post/33/
+*/
+
+
 rule Windows_Trojan_Havoc_77f3d40e {
     meta:
         author = "Elastic Security"
