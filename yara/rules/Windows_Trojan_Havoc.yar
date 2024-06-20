@@ -1,5 +1,5 @@
 /*
-    Couple Karma-X changed Yara rules - See how we block these threats without YARA and instead with Vitamin-K here: https://www.karma-x.io/blog/post/33/
+    Couple Karma-X changed Yara rules - See how we block these threats without YARA and instead with Vitamin-K here: https://www.karma-x.io/blog/post/33/?=hvcyararulegh
 */
 
 
